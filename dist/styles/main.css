@@ -2,9 +2,11 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 220px);
+  max-width: 500px;
   counter-reset: num; }
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: 1000px) {
     .athletes-list {
+      max-width: 1000px;
       grid-template-columns: repeat(4, 220px); } }
 
 .athletes-item {
@@ -27,7 +29,9 @@
     height: 32px;
     position: absolute;
     right: 20px;
-    top: 84px;
+    top: 50%;
+    -webkit-transform: translateY(-32px);
+            transform: translateY(-32px);
     background-color: #fff;
     border-radius: 50%;
     counter-increment: num;
