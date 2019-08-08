@@ -1,6 +1,5 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin screen-size {
+  @media only screen and (min-width: #{$screen-size}) {
+    @content;
   }
 }

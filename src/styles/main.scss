@@ -1,7 +1,18 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+
+@import "blocks/athletes_list";
+@import "blocks/athletes";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background: $c-gray;
+  margin: 0;
+}
+
+.main {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
 }
