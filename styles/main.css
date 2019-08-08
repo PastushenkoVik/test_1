@@ -22,7 +22,8 @@
   .athletes-item:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    background: #eee; }
+    background: #eee;
+    z-index: 5; }
   .athletes-item:after {
     z-index: 10;
     width: 32px;
