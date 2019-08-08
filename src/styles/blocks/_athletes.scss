@@ -1,0 +1,42 @@
+.athletes-item {
+  position: relative;
+
+  &:after {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 84px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    counter-increment: increment ;
+    content: counter(num);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #8b0000;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2f4f4f;
+
+    margin: 10px 0;
+    text-align: center;
+  }
+}

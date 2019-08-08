@@ -1,0 +1,10 @@
+.athletes-list {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 200px);
+
+  @include screen-size {
+    grid-template-columns: repeat(4, 200px);
+  }
+  counter-reset: num;
+}
