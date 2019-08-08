@@ -12,7 +12,7 @@
     background-color: #fff;
     border-radius: 50%;
 
-    counter-increment: increment ;
+    counter-increment: num;
     content: counter(num);
 
     display: flex;
